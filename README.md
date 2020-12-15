@@ -24,7 +24,7 @@ analysis_test,p -> bwa mem ../genome/gene_CDS.fa aaa_1.clean.fq aaa_3.clean.fq >
 analysis_test,p -> samtools view -bS aaa.sam > aaa.bam
 analysis_test,p -> rm aaa.sam
 ```  
-*sample.list_b*
+*sample.list_b*  
 ![sample.list_b](./test_figure/sample_list_b.jpg)
 So, the format for each line is: 
 ```
