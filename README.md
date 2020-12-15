@@ -28,7 +28,7 @@ analysis_test,p -> rm aaa.sam
 ![sample.list_b](./test_figure/sample_list_b.jpg)
 So, the format for each line is: 
 ```
-Program name , Parameter type -> Content(;)
+Program name , Parameter type -> Content(';' for separate content)
 # Only ',' '->' and ';' will be used to sparate field, so white space near these markers will be omitted. you can input like:
 1,i->aaa;bbb;ccc
 or with white space, like
