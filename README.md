@@ -28,11 +28,15 @@ analysis_test,p -> rm aaa.sam
 ![sample.list_b](./test_figure/sample_list_b.jpg)
 So, the format for each line is: 
 ```
-Program name , Parameter type -> Content
+Program name , Parameter type -> Content(;)
+# Only ',' '->' and ';' will be used to sparate field, so white space near these markers will be omitted. you can input like:
+1,i->aaa;bbb;ccc
+or with white space, like
+1   , p    -> aaa    ；   bbb
 ```
 ___
 <u>**Global parameters</u>**  
-`# stop_if_error True/False**`  
+`# stop_if_error True/False`  
 
 *Stop or not if errors(default False), which can be omitted*  
 ___
@@ -44,7 +48,13 @@ ___
 
 ***
 <u>**Parameter type :**</u>  
-**1. i:**&emsp;*->(content)input samples, which is sparated by ';' or '\n', samples sparated by ' ' will be regard as one input sample*   
+**1. i:**&emsp;*->(content)input samples, which is sparated by ';', samples sparated by ' ' will be regard as one input sample, this Parameter line can be used for multiple lines to add samples,such as:*
+```
+1,i -> aaa ; bbb
+1,i -> ccc ; ddd
+1,p -> sleep 10
+
+```   
 *use from-file=aaa.txt can read and use the items in aaa.txt, similarly, separaters are ';' and '\n' *  
   
 **2. t:**&emsp;*->(content)number of parallel runing jobs or programs, default:1. '!' means run all input samples in the same time*  
