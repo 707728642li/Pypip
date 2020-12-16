@@ -1,4 +1,4 @@
-# <u>Python script to build easy bioinfomatic analysis pipline</u>  
+# <u>Python script to build simple bioinfomatic analysis pipline</u>  
   
 
 ## Examples and usages
@@ -38,6 +38,7 @@ ___
 <u>**Global parameters</u>**  
 `# stop_if_error True/False`  
 
+
 *Stop or not if errors(default False), which can be omitted*  
 ___
 <u>**Program name** </u> :  
@@ -55,7 +56,8 @@ ___
 1,p -> sleep 10
 
 ```   
-*use from-file=aaa.txt can read and use the items in aaa.txt, similarly, separaters are ';' and '\n' *  
+
+*use from-file=aaa.txt can read and use the items in aaa.txt, similarly, separaters are ';' and '\n'*  
   
 **2. t:**&emsp;*->(content)number of parallel runing jobs or programs, default:1. '!' means run all input samples in the same time*  
   
