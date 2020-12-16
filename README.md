@@ -25,7 +25,7 @@ analysis_test,p -> samtools view -bS aaa.sam > aaa.bam
 analysis_test,p -> rm aaa.sam
 ```  
 *sample.list_b*  
-![sample.list_b](./test_figure/sample_list_b.jpg)
+![sample.list_b](./test_figure/sample_list_b.jpg)  
 So, the format for each line is: 
 ```
 Program name , Parameter type -> Content(';' for separate content)
@@ -54,7 +54,6 @@ ___
 1,i -> aaa ; bbb
 1,i -> ccc ; ddd
 1,p -> sleep 10
-
 ```   
 
 *use from-file=aaa.txt can read and use the items in aaa.txt, similarly, separaters are ';' and '\n'*  
